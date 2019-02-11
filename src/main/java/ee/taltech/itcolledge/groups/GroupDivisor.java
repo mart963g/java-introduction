@@ -15,13 +15,13 @@ public class GroupDivisor {
         System.out.println("\n");
         System.out.println("\n");
         System.out.println("Insert the number of people");
-        int people = 0;
+        int people = sc.nextInt();
         System.out.println("Insert the group size");
-        int size = 0;
+        int size = sc.nextInt();
 
         //todo create tests for your calculator
-        int groups = 0;
-        int leftover = 0;
+        int groups = people/size;
+        int leftover = people%size;
 
         System.out.println(String.format("You get %d full groups, leftover %d.", groups, leftover));
         System.out.println("---------=============---------");
